@@ -120,8 +120,10 @@ a {
 
 section {
     width: 100%;
-    background-color: #151515;
+    margin-top: -30px;
     position: relative;
+    background-color: #2a2a2a;
+    color: #ffffff;
 }
 
 section .container {
@@ -133,16 +135,16 @@ section .container {
     min-height: 100vh;
 }
 
-section img {
+.container img {
     width: 100%;
 }
 
-section .container>* {
+section .container,
+.container2>* {
     margin: 2rem;
 }
 
 .content {
-    color: #fff;
     transform: translateY(-50px);
 }
 
@@ -161,8 +163,7 @@ section .container>* {
 .border {
     position: absolute;
     width: 0%;
-    height: 3px;
-    background-color: #fff;
+    height: 2px;
     bottom: 0;
     left: 0;
 }
@@ -177,8 +178,52 @@ section .container>* {
     background: linear-gradient(to top, #151515, transparent);
 }
 
-.opacity {
+.opacity,
+.opacity2 {
     opacity: 0;
+}
+
+
+/* Video section */
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+.container2 {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: #2a2a2a;
+}
+
+.container4 {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: #2a2a2a;
+}
+
+section iframe {
+    width: 100%;
+}
+
+section .container>* {
+    margin: 2rem;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: #ffffff;
 }
 
 @media (max-width: 850px) {
